@@ -1,0 +1,59 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "scrypt:32768:8:1$SKD1h0P47p8hgDf0$2304eb52e90fd9e7935b177d5e6977b2f717b3360f06280de12d0c0d324d0cb3d16a8dd8763bc5ab3008308914d9f7579e19894eca183919473f5371c50159e2",
+            "group": "admin"
+        },
+        {
+            "username": "testuser",
+            "password": "scrypt:32768:8:1$hI8DL9zOFf3AzhNu$d50201e1f43d28645bc861b90ac0ffd63192f229d4d3894bc9173eb436b4379a9b745d71a790b07d880f4b2db1d816bead7fdc62fe15606e12dd6cf2d45e75b9",
+            "group": "member"
+        },
+        {
+            "username": "low1",
+            "password": "scrypt:32768:8:1$9tBpXkUpp8ORE2HS$29448e17ca55139e8d8ea825062b3a3271f3cf9ebd5ef0ffbd2611eb47a45d546b736d50ed69de8ce37919c6cd87a165b4317f3b01ccb3d7265f6dff3859eeee",
+            "group": "user"
+        },
+        {
+            "username": "lows",
+            "password": "scrypt:32768:8:1$la14B4DPiq3iFT5R$7ef8cddc9e2285cfa2748fb3145e75a441f264c7a9fb412faa65c15a662e97ae1eaefb12dd85a9fed6de424aefddf2a9e36e4f886e50e8c710810edd930c06aa",
+            "group": "user"
+        },
+        {
+            "username": "1155",
+            "password": "scrypt:32768:8:1$EycZxxB8O8oa3k1U$c2abbed9d98311fba500d3f9abf109e4856ede35af7a71f838fba5f148343feca8a16d5b7e6d60f194170734246dcb67298bf538932e23e3dce39dcaa616835a",
+            "group": "user"
+        },
+        {
+            "username": "loww",
+            "password": "scrypt:32768:8:1$KKkeOYO4PEbx11g8$8e975237bcc98b7b27e4e113df805fbd51e41b56642ea73be841e98b5bc63e0a8b32307c78fd7cca058c9a3c20c69009dc06fe8cc1cdd4a421d7cd72d283da22",
+            "group": "user"
+        },
+        {
+            "username": "12",
+            "password": "scrypt:32768:8:1$v46eXGlUuDXpWqbz$ac0f2b29d14ee084f9b3e03e948b506c832fc118a47028affce9021a2271721510a07e8ed960153d0aa97822da596edca35d98211c106d8c39dc56b848a1f8e4",
+            "group": "user"
+        },
+        {
+            "username": "test123",
+            "password": "scrypt:32768:8:1$OrmTUXSww8m9QWdb$5ab4cf4f8c381a60b7d1c2b5b0d50b5c58efbf766bffe8fa95b4c117716d5a015c2a7756d8caed4bd0af96cd89b20e6098e2f90fbc933b76eba62a4c1b566601",
+            "group": "user"
+        },
+        {
+            "username": "test",
+            "password": "scrypt:32768:8:1$zgofnkyx1oiheeNC$78114ba20b197a0f4081a3c35ff6dd3c7a4a79a4e6d57c8a199262029e1464c5ec77d26639bbd41c5e286121636bc0c61dbf6bb000d40d6ba1db90b91cfcb7ba",
+            "group": "user"
+        },
+        {
+            "username": "testme",
+            "password": "scrypt:32768:8:1$Qmj6pgjiwfR2innI$55878a84d14f6f3808610e2c593136a22b36cc02a0d18d54967f785af155a3952c85aba01045a03fe23bf3b1f6cf21d743d29acaec283577dad664fa588e571e",
+            "group": "user"
+        },
+        {
+            "username": "hi",
+            "password": "scrypt:32768:8:1$eBqLry4HseDAZJX6$8e3dfdde2c83b2cb0c4b5a143e42f9a3df19f406477ce0fc6f5d62b53029a61b133c9c90bb76a9a440538d8ef967c31091360cb56734e3e269dd4057c398220e",
+            "group": "user"
+        }
+    ]
+}
