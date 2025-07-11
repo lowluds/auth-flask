@@ -1,7 +1,3 @@
-Your README looks solid and professional — clean, clear, and minimal, just like the app. Here's a lightly refined version with tightened language, removed redundancy, and consistent formatting:
-
----
-
 # Auth Flask
 
 A simple user authentication system built with Flask. It includes login, registration, password hashing, and a demo "Forgot Password" page. This project is designed as a minimal yet functional starting point for user authentication in a Python web app.
