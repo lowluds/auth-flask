@@ -289,85 +289,29 @@ p {
     animation: bubbleUp 1.8s infinite;
 }
 
-.admin-info-tooltip {
-    position: fixed;
-    bottom: 110px;
-    right: 48px;
-    background: #23263a;
-    color: #fff;
-    padding: 20px 28px;
-    border-radius: 18px 18px 18px 6px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
-    z-index: 10000;
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(20px);
-    transition: opacity 0.2s, transform 0.2s;
-    min-width: 220px;
-    max-width: 320px;
-    text-align: left;
+.bubble1 {
+    width: 8px; height: 8px;
+    left: 50%; top: -8px;      /* was 8px, now -8px */
+    transform: translateX(-50%);
+    animation-delay: 0s;
+}
+.bubble2 {
+    width: 6px; height: 6px;
+    left: 60%; top: 2px;       /* was 16px, now 2px */
+    transform: translateX(-50%);
+    animation-delay: 0.3s;
+}
+.bubble3 {
+    width: 4px; height: 4px;
+    left: 40%; top: 6px;       /* was 20px, now 6px */
+    transform: translateX(-50%);
+    animation-delay: 0.6s;
 }
 
-/* Show the tooltip when active */
-.admin-info-tooltip.active {
-    opacity: 0.97;
-    pointer-events: auto;
-    transform: translateY(0);
-}
-
-/* Chat bubble tail */
-.admin-info-tooltip::after {
-    content: "";
-    position: absolute;
-    bottom: -16px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    background: #23263a;
-    border-radius: 0 0 18px 0;
-    transform: rotate(45deg);
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.12);
-    z-index: -1;
-}
-
-/* Optional: subtle chat bubble border */
-.admin-info-tooltip {
-    border: 1.5px solid #3478f6;
-}
-
-/* Style the code and list for clarity */
-.admin-info-tooltip code {
-    color: #5ad;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.98em;
-}
-.admin-info-tooltip ul {
-    margin: 8px 0 0 0;
-    padding-left: 18px;
-}
-.admin-info-tooltip strong {
-    color: #5ad;
-    font-size: 1.08em;
-    font-weight: 600;
-}
-
-@keyframes colorShift {
-    0%, 100% { color: #0a58ca; }
-    50% { color: #5ad; }
-}
-.admin-info-fab i {
-    animation: colorShift 2.5s infinite;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg);}
-    20% { transform: rotate(-8deg);}
-    40% { transform: rotate(8deg);}
-    60% { transform: rotate(-8deg);}
-    80% { transform: rotate(8deg);}
-}
-.admin-info-fab {
-    animation: wiggle 2s infinite 3s;
+@keyframes bubbleUp {
+    0%   { opacity: 0; transform: translateX(-50%) scale(0.7) translateY(0);}
+    20%  { opacity: 0.7; }
+    50%  { opacity: 1; transform: translateX(-50%) scale(1.1) translateY(-18px);} /* was -10px */
+    80%  { opacity: 0.7; }
+    100% { opacity: 0; transform: translateX(-50%) scale(0.7) translateY(-32px);} /* was -18px */
 }

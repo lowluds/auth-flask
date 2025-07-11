@@ -248,7 +248,7 @@ p {
     transform: translateY(0);
 }
 .admin-info-tooltip code {
-    background: transparent;
+    background: #181a20;
     color: #5ad;
     padding: 2px 6px;
     border-radius: 4px;
@@ -257,117 +257,4 @@ p {
 .admin-info-tooltip ul {
     margin: 8px 0 0 0;
     padding-left: 18px;
-}
-
-.admin-info-fab {
-    position: fixed;
-    bottom: 32px;
-    right: 32px;
-    width: 56px;
-    height: 56px;
-    background: #23263a;
-    color: #0a58ca;
-    border-radius: 50%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 10001;
-    transition: background 0.2s, color 0.2s;
-    overflow: visible; /* allow bubbles to show outside */
-    position: fixed;
-}
-
-.bubble {
-    position: absolute;
-    background: #3478f6;
-    opacity: 0.85;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: bubbleUp 1.8s infinite;
-}
-
-.admin-info-tooltip {
-    position: fixed;
-    bottom: 110px;
-    right: 48px;
-    background: #23263a;
-    color: #fff;
-    padding: 20px 28px;
-    border-radius: 18px 18px 18px 6px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
-    z-index: 10000;
-    font-size: 1rem;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(20px);
-    transition: opacity 0.2s, transform 0.2s;
-    min-width: 220px;
-    max-width: 320px;
-    text-align: left;
-}
-
-/* Show the tooltip when active */
-.admin-info-tooltip.active {
-    opacity: 0.97;
-    pointer-events: auto;
-    transform: translateY(0);
-}
-
-/* Chat bubble tail */
-.admin-info-tooltip::after {
-    content: "";
-    position: absolute;
-    bottom: -16px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    background: #23263a;
-    border-radius: 0 0 18px 0;
-    transform: rotate(45deg);
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.12);
-    z-index: -1;
-}
-
-/* Optional: subtle chat bubble border */
-.admin-info-tooltip {
-    border: 1.5px solid #3478f6;
-}
-
-/* Style the code and list for clarity */
-.admin-info-tooltip code {
-    color: #5ad;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.98em;
-}
-.admin-info-tooltip ul {
-    margin: 8px 0 0 0;
-    padding-left: 18px;
-}
-.admin-info-tooltip strong {
-    color: #5ad;
-    font-size: 1.08em;
-    font-weight: 600;
-}
-
-@keyframes colorShift {
-    0%, 100% { color: #0a58ca; }
-    50% { color: #5ad; }
-}
-.admin-info-fab i {
-    animation: colorShift 2.5s infinite;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg);}
-    20% { transform: rotate(-8deg);}
-    40% { transform: rotate(8deg);}
-    60% { transform: rotate(-8deg);}
-    80% { transform: rotate(8deg);}
-}
-.admin-info-fab {
-    animation: wiggle 2s infinite 3s;
 }

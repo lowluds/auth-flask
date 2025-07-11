@@ -45,30 +45,14 @@
         <p>Don't have an account? <a href="/register">Register</a></p>
     </div>
 
-      <!-- Admin Info Sticky Button -->
-      <div class="admin-info-fab" id="adminInfoFab" title="Admin login">
-          <i class="fas fa-user-shield"></i>
-      </div>
-      <div class="admin-info-tooltip" id="adminInfoTooltip">
-          <strong>Test Admin Login</strong>
-          <ul>
-              <li>Username: <code>admin</code></li>
-              <li>Password: <code>123</code></li>
-          </ul>
-      </div>
-
-<script>
-document.getElementById('adminInfoFab').onclick = function() {
-    document.getElementById('adminInfoTooltip').classList.toggle('active');
-};
-document.addEventListener('click', function(e) {
-    const fab = document.getElementById('adminInfoFab');
-    const tooltip = document.getElementById('adminInfoTooltip');
-    if (!fab.contains(e.target) && !tooltip.contains(e.target)) {
-        tooltip.classList.remove('active');
-    }
-});
-</script>
+    <!-- Admin Info Sticky Node -->
+    <div class="admin-sticky-info">
+        <strong>Test Admin Login</strong>
+        <ul>
+            <li>Username: <code>admin</code></li>
+            <li>Password: <code>123</code></li>
+        </ul>
+    </div>
 
 </body>
 </html>
