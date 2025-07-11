@@ -69,13 +69,13 @@ body {
     color: #4a5568;
 }
 .dashboard-container ul, .admin-dashboard-container ul {
-    list-style: none;
+    list-style: none !important;
     padding: 0;
     margin-top: 36px;
 }
 .dashboard-container li, .admin-dashboard-container li {
     margin: 18px 0;
-    list-style: none;
+    list-style: none !important;
     padding: 0;
 }
 .dashboard-container a, .admin-dashboard-container a {

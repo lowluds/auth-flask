@@ -75,8 +75,6 @@ body {
 }
 .dashboard-container li, .admin-dashboard-container li {
     margin: 18px 0;
-    list-style: none;
-    padding: 0;
 }
 .dashboard-container a, .admin-dashboard-container a {
     color: #6366f1;

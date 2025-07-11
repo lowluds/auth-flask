@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
     <div class="dashboard-container">
-      <i class="fas fa-tachometer-alt dashboard-icon"></i>
-
-        <h2>User Dashboard</h2>
+        <h2>Admin Dashboard</h2>
         {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
             {% for category, message in messages %}
@@ -23,11 +19,9 @@
             {% endfor %}
           {% endif %}
         {% endwith %}
-        <p>Welcome, {{ session['username'] }}!</p>
+        <p>Welcome, {{ session['username'] }}! You have admin privileges.</p>
         <ul>
-            {% if session.get('group') == 'admin' %}
-            <li><a href="/admin">Go to Admin Dashboard</a></li>
-            {% endif %}
+            <li>User Dashboard</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
     </div>

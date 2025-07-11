@@ -6,12 +6,9 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-      <div class="dashboard-container">
-        <i class="fas fa-user-shield admin-icon"></i>
+    <div class="admin-dashboard-container" style="background:#23272f; max-width: 400px; margin: 60px auto; padding: 40px 30px 30px 30px; border-radius: 16px; box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18); display: flex; flex-direction: column; align-items: center; color: #f3f3f3;">
         <h2>Admin Dashboard</h2>
         {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
@@ -23,9 +20,9 @@
           {% endif %}
         {% endwith %}
         <p>Welcome, {{ session['username'] }}! You have admin privileges.</p>
-        <ul>
-            <li>User Dashboard</a></li>
-            <li><a href="/logout">Logout</a></li>
+        <ul style="list-style:none; padding:0; width:100%;">
+            <li style="margin-bottom:12px;"><a href="/dashboard" style="color:#f6d365; text-decoration:none; font-weight:500;">User Dashboard</a></li>
+            <li><a href="/logout" style="color:#f6d365; text-decoration:none; font-weight:500;">Logout</a></li>
         </ul>
     </div>
 </body>

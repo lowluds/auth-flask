@@ -149,26 +149,10 @@ a:hover {
     margin-bottom: 0px;
 }
 
-.register-container .register-icon {
+.login-container .register-icon {
     font-size: 84px;
     color: #0a58ca;
     margin-bottom: 0px;
-}
-
-.dashboard-container .dashboard-icon {
-    font-size: 84px;
-    color: #0a58ca;
-    margin-bottom: 0px;
-}
-
-.dashboard-container .admin-icon {
-    font-size: 84px;
-    color: #0a58ca;
-    margin-bottom: 0px;
-}
-
-.login-container .forgot-container {
-    padding-top: 100px; /* or any value you want */
 }
 
 /* Paragraphs */

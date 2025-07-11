@@ -54,7 +54,11 @@ body {
     text-align: center;
     transition: box-shadow 0.2s;
 }
-
+.login-icon {
+    font-size: 48px;
+    color: #0a58ca;
+    margin-bottom: 20px;
+}
 .dashboard-container:hover, .admin-dashboard-container:hover {
     box-shadow: 0 12px 40px rgba(60, 72, 100, 0.22);
 }
@@ -75,8 +79,6 @@ body {
 }
 .dashboard-container li, .admin-dashboard-container li {
     margin: 18px 0;
-    list-style: none;
-    padding: 0;
 }
 .dashboard-container a, .admin-dashboard-container a {
     color: #6366f1;

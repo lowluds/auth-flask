@@ -36,9 +36,11 @@
             {% endwith %}
 
             <button type="submit">Login</button>
-            <br>
+
             {% if show_forgot %}
+            <div class="login-container forgot-container"></div>
             <a href="{{ url_for('forgot_password') }}" class="forgot-link">Forgot password?</a>
+            </div>
             {% endif %}
 
         </form>
