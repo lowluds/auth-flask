@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "scrypt:32768:8:1$MCdH4xTrvjBKYcz7$5ca642d8c4772cc7d2d75aca1bb0c68e63e09708f40df0e4fa205f1db65c4f6d527a9ee3ff3973bfe8edc794dd5626cad1be9f625fd6546b851de488236c3e61",
+            "group": "admin"
+        },
+        {
+            "username": "testuser",
+            "password": "scrypt:32768:8:1$FUTfrzQV6GUx8N6x$8081b13d287a9abb6ece5619d1da6b5e55db61808d84fc59c7e92014ebe3bd4070e3962a8f0475d32630dfb3cb40c251a4923aa67d6ad165073c8b2bea4654da",
+            "group": "member"
+        },
+        {
+            "username": "low1",
+            "password": "scrypt:32768:8:1$p8QcIczUfz4hmNQq$a434c3cc6e17aebe81bfecbe6fc50689adf2a32dd6d05ac19d5a3ecc2d277f39317856240575504d945428369670e5dca9dc8e591e06492cd5d5a9799b04764e",
+            "group": "user"
+        },
+        {
+            "username": "lows",
+            "password": "scrypt:32768:8:1$WHeZGlKayPOEjzhM$396ae52847bb9077fd20f344fd18ce221a13c1cce1494dffe271a45f0ffb4326253ed70571905bfe7a8d818f32d917736dae0aa781f69b4cf7b1284fe5f733d0",
+            "group": "user"
+        },
+        {
+            "username": "1155",
+            "password": "scrypt:32768:8:1$7Vawe2FdNjvlLhHV$f0bab58bca11c84379a4cca752b1e255731250370e62f81fcc760578876563cb99552b64504cd7b05c0f9598326e846d2e6af21755303a5c436cd125fd7ff4ee",
+            "group": "user"
+        },
+        {
+            "username": "loww",
+            "password": "scrypt:32768:8:1$NTM2lbYJspyYB71L$c079e11345925bafc31fb1c8ef3157eb09182ac31de8a282abbdf910ac537d3f0bb2c49481890bcecb24485f1ba05183a3c1c34d6e9d8aa2e942d86658a76080",
+            "group": "user"
+        },
+        {
+            "username": "12",
+            "password": "scrypt:32768:8:1$QG6ltzYxDZI7cGSg$02273162ab67e049d826afdf29efb69010f28d5f5c94c1328dc0797e146619dde30098135d8c4cae8783df3919aca7d9ae3f3036b49966efd27560f9ca074431",
+            "group": "user"
+        }
+    ]
+}

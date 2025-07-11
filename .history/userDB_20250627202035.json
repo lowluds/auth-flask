@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "scrypt:32768:8:1$xx4j3yTVIyEVAyDb$901a21acaaf422a09e2228e7b1f05837e058abbf04107deb15192ba879f6855a26b5762c2ac15a5076797270b947802b8da1fcbad3b859aae9728b0dd5ce8d86"
+        },
+        {
+            "username": "testuser",
+            "password": "testpassword"
+        }
+    ]
+}

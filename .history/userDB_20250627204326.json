@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "scrypt:32768:8:1$MCdH4xTrvjBKYcz7$5ca642d8c4772cc7d2d75aca1bb0c68e63e09708f40df0e4fa205f1db65c4f6d527a9ee3ff3973bfe8edc794dd5626cad1be9f625fd6546b851de488236c3e61",
+            "group"   : "admin"
+        },
+        {
+            "username": "testuser",
+            "password": "scrypt:32768:8:1$FUTfrzQV6GUx8N6x$8081b13d287a9abb6ece5619d1da6b5e55db61808d84fc59c7e92014ebe3bd4070e3962a8f0475d32630dfb3cb40c251a4923aa67d6ad165073c8b2bea4654da",
+            "group"   : "member"
+        }
+    ]
+}

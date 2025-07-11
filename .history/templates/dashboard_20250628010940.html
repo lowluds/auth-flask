@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
+</head>
+<body>
+    <div class="dashboard-container" style="background:#23272f; max-width: 400px; margin: 60px auto; padding: 40px 30px 30px 30px; border-radius: 16px; box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18); display: flex; flex-direction: column; align-items: center; color: #f3f3f3;">
+        <h2 style="color:#f6d365; font-weight:600; margin-bottom:24px;">User Dashboard</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              {% if category == 'error' %}
+              <div style="color: #ff0000; font-weight: 600; margin: 14px 0 18px 0; text-align: center; font-size: 1.08rem; letter-spacing: 0.7px;">{{ message }}</div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <p>Welcome, {{ session['username'] }}!</p>
+        <ul style="list-style:none; padding:0; width:100%;">
+            {% if session.get('group') == 'admin' %}
+            <li style="margin-bottom:12px;"><a href="/admin" style="color:#f6d365; text-decoration:none; font-weight:500;">Go to Admin Dashboard</a></li>
+            {% endif %}
+            <li><a href="/logout" style="color:#f6d365; text-decoration:none; font-weight:500;">Logout</a></li>
+        </ul>
+    </div>
+</body>
+</html>

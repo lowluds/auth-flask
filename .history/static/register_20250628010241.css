@@ -1,0 +1,105 @@
+/* Modern dark theme for all pages */
+body {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #f3f3f3;
+}
+
+/* Shared container style for login and register */
+.login-container, .register-container {
+    background: #23272f;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 40px 30px 30px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2, .register-container h2 {
+    margin-bottom: 24px;
+    color: #f6d365;
+    font-weight: 600;
+}
+
+.login-container form, .register-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label, .register-container label {
+    margin-bottom: 6px;
+    color: #f3f3f3;
+    font-size: 1rem;
+}
+
+.login-container input,
+.login-container select,
+.register-container input,
+.register-container select {
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #2c2f36;
+    color: #f3f3f3;
+    transition: border 0.2s, background 0.2s;
+}
+
+.login-container input:focus,
+.login-container select:focus,
+.register-container input:focus,
+.register-container select:focus {
+    border: 1.5px solid #f6d365;
+    outline: none;
+    background: #23272f;
+}
+
+.login-container button, .register-container button {
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    color: #232526;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 8px;
+}
+
+.login-container button:hover, .register-container button:hover {
+    background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+    color: #232526;
+}
+
+.login-container p, .register-container p {
+    margin-top: 18px;
+    color: #bbb;
+    font-size: 0.98rem;
+}
+
+.login-container a, .register-container a {
+    color: #f6d365;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.login-container a:hover, .register-container a:hover {
+    color: #fda085;
+}
+
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin: 10px 0 18px 0;
+    font-weight: 500;
+}

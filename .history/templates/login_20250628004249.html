@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
+</head>
+
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">
+            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="/login">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+
+                {% if error %}
+                <div style="color: #fff; font-weight: 500; margin: 14px 0 18px 0;">{{ error }}</div>
+                {% endif %}
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>
+</body>
+</html>

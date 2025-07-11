@@ -1,0 +1,79 @@
+body {
+    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+.login-container {
+    background: #fff;
+    padding: 30px 40px;
+    margin: 100px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background: #0056b3;
+}
+.login-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+.login-container a:hover {
+    text-decoration: underline;
+}
+.dashboard-container {
+    background: #fff;
+    padding: 40px 50px;
+    margin: 100px auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    text-align: center;
+}
+.dashboard-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.dashboard-container p {
+    font-size: 18px;
+    color: #555;
+}
+.dashboard-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.dashboard-container li {
+    margin: 15px 0;
+}
+.dashboard-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.dashboard-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

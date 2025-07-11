@@ -1,0 +1,39 @@
+body {
+    background: #e9ecef;
+    font-family: Arial, sans-serif;
+}
+.admin-dashboard-container {
+    background: #fff;
+    padding: 50px 60px;
+    margin: 100px auto;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+    text-align: center;
+}
+.admin-dashboard-container h2 {
+    margin-bottom: 22px;
+    color: #222;
+}
+.admin-dashboard-container p {
+    font-size: 19px;
+    color: #444;
+}
+.admin-dashboard-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+.admin-dashboard-container li {
+    margin: 18px 0;
+}
+.admin-dashboard-container a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.admin-dashboard-container a:hover {
+    color: #155724;
+    text-decoration: underline;
+}

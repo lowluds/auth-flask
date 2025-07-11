@@ -1,0 +1,24 @@
+/* Modern error style for login and form input errors */
+.input-error {
+    background: none;
+    color: #ff0000;
+    padding: 0;
+    border-radius: 0;
+    margin: 14px 5 18px 5;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: none;
+    letter-spacing: 0.7px;
+    font-size: 1.08rem;
+    border: none;
+    text-shadow: none;
+    max-width: 400px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes fadeOut {
+  0% { opacity: 0.98; transform: translateY(0); }
+  80% { opacity: 0.98; }
+  100% { opacity: 0; transform: translateY(-20px); pointer-events: none; }
+}
